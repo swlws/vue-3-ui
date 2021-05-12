@@ -12,7 +12,7 @@
 import { defineComponent, reactive } from "@vue/runtime-core";
 
 export default defineComponent({
-  name: "BaseList",
+  name: "UiBaseList",
   setup() {
     const list = reactive([11, 22, 33, 44, 55, 66, 77, 88]);
     const obj: { a?: string } = {};

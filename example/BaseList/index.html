@@ -5,25 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BaseList Component</title>
-    <link rel="stylesheet" href="./../../dist/vue3ui.umd.css" />
+    <link rel="stylesheet" href="./../../dist/vue-3-ui.umd.css" />
+    <link rel="stylesheet" href="./../element-plus.css" />
   </head>
   <body>
     <div id="app">
-      <base-list />
+      <ui-base-list />
     </div>
 
-    <script src="https://unpkg.com/vue@next"></script>
-    <script src="./../../dist/vue3ui.umd.js"></script>
-    <script>
-      const BaseList = window.vue3ui.BaseList;
-
-      const app = Vue.createApp({
-        components: {
-          BaseList,
-        },
-      });
-
-      app.mount("#app");
-    </script>
+    <script src="./../vue@next.js"></script>
+    <script src="./../element-plus.js"></script>
+    <script src="./../../dist/vue-3-ui.umd.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

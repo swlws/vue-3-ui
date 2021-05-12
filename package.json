@@ -1,14 +1,14 @@
 {
-  "name": "vue3ui",
+  "name": "vue-3-ui",
   "version": "1.0.0",
   "description": "",
   "author": "swlws",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "main": "dist/vue3ui.umd.js",
-  "module": "dist/vue3ui.esm.js",
+  "main": "dist/vue-3-ui.umd.js",
+  "module": "dist/vue-3-ui.esm.js",
   "scripts": {
-    "dev": "rollup -c build/rollup.umd.config.js -w",
+    "dev": "npm run clean && rollup -c build/rollup.umd.config.js -w",
     "build": "npm run clean && npm run build:esm && npm run build:umd",
     "build:esm": "rollup -c build/rollup.esm.config.js",
     "build:umd": "rollup -c build/rollup.umd.config.js",
@@ -32,6 +32,6 @@
     "element-plus": "^1.0.2-beta.44",
     "rollup-plugin-commonjs": "^10.1.0",
     "typescript": "~3.9.3",
-    "vue": "^3.0.0"
+    "vue": "^3.0.4"
   }
 }
