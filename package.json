@@ -1,0 +1,37 @@
+{
+  "name": "vue3ui",
+  "version": "1.0.0",
+  "description": "",
+  "author": "sunwenlong",
+  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "main": "dist/test-bricks-teach.umd.js",
+  "module": "dist/test-bricks-teach.esm.js",
+  "scripts": {
+    "dev": "rollup -c build/rollup.umd.config.js -w",
+    "build": "npm run clean && npm run build:esm && npm run build:umd",
+    "build:esm": "rollup -c build/rollup.esm.config.js",
+    "build:umd": "rollup -c build/rollup.umd.config.js",
+    "clean": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.38.5",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-scss": "^2.6.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "rollup-plugin-vue": "6.0.0-beta.6"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.0.11",
+    "element-plus": "^1.0.2-beta.44",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "typescript": "~3.9.3",
+    "vue": "^3.0.0"
+  }
+}
