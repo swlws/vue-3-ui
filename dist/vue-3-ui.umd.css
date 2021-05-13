@@ -1,0 +1,27 @@
+.base-grid[data-v-4e9900ac] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff; }
+  .base-grid[data-v-4e9900ac] > section[data-v-4e9900ac] {
+    flex: 1; }
+  .base-grid[data-v-4e9900ac] > footer[data-v-4e9900ac] {
+    text-align: right;
+    padding: 8px 20px; }
+
+.base-grid[data-v-1b892388] {
+  height: 100%;
+  width: 100%; }
+  .base-grid[data-v-1b892388] .el-table th[data-v-1b892388] {
+    height: 40px;
+    color: #666666;
+    background-color: #f6f6f8; }
+  .base-grid[data-v-1b892388] .hover-row[data-v-1b892388],
+  .base-grid[data-v-1b892388] tr.hover-row > td[data-v-1b892388] {
+    background-color: #d3ebff; }
+  .base-grid[data-v-1b892388] .current-row[data-v-1b892388] {
+    background-color: #4ea6ed; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .data-grid-body-wrap[data-v-1b892388] {
+    position: absolute; } }

@@ -12,13 +12,17 @@
     "build": "npm run clean && npm run build:esm && npm run build:umd",
     "build:esm": "rollup -c build/rollup.esm.config.js",
     "build:umd": "rollup -c build/rollup.umd.config.js",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "cpdist": "node build/cp_dist",
+    "up": "sh sftp_up.sh",
+    "down": "node sftp-down.js"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@rollup/plugin-node-resolve": "^11.1.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-latest": "^6.24.1",
+    "node-stream-zip": "^1.13.4",
     "rimraf": "^3.0.2",
     "rollup": "^2.38.5",
     "rollup-plugin-babel": "^4.4.0",
