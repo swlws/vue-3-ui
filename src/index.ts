@@ -1,8 +1,9 @@
 import { App } from "vue";
 
+import BaseMenu from "./components/BaseMenu/main";
 import BaseGrid from "./components/BaseGrid/main";
 
-const components = [BaseGrid];
+const components = [BaseMenu, BaseGrid];
 
 // 全局注册
 const install = (app: App) => {
@@ -15,7 +16,7 @@ const install = (app: App) => {
 };
 
 // 局部注册
-export { BaseGrid, install };
+export { BaseMenu, BaseGrid, install };
 export default {
   install,
 };

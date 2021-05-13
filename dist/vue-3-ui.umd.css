@@ -9,6 +9,14 @@
     text-align: right;
     padding: 8px 20px; }
 
+.base-menu[data-v-10e6fe83] {
+  display: flex;
+  border-bottom: 1px solid #333; }
+  .base-menu[data-v-10e6fe83] > section[data-v-10e6fe83] {
+    margin: 0px 30px;
+    display: flex;
+    align-items: center; }
+
 .base-grid[data-v-1b892388] {
   height: 100%;
   width: 100%; }
@@ -25,3 +33,65 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .data-grid-body-wrap[data-v-1b892388] {
     position: absolute; } }
+
+.menu-item[data-v-186927de] {
+  cursor: pointer;
+  margin: 0px 10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold; }
+
+.two-checked[data-v-186927de] {
+  color: #42b983; }
+
+.menu-body[data-v-186927de] .leaf-item[data-v-186927de] {
+  cursor: pointer;
+  margin: 10px 5px;
+  padding: 10px 5px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  padding: 0px 5px;
+  color: #666; }
+
+.menu-body[data-v-186927de] .three-checked[data-v-186927de] {
+  color: #42b983;
+  border-bottom: 1px solid #42b983; }
+
+.menu-body[data-v-1b2bbd44] {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .menu-body[data-v-1b2bbd44] > .item[data-v-1b2bbd44] {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 5px 10px 0px #e8e8e8;
+    display: flex;
+    align-items: center; }
+    .menu-body[data-v-1b2bbd44] > .item[data-v-1b2bbd44] > i[data-v-1b2bbd44] {
+      font-size: 20px;
+      margin: 0px 10px; }
+    .menu-body[data-v-1b2bbd44] > .item[data-v-1b2bbd44].checked[data-v-1b2bbd44] {
+      color: #42b983;
+      border: 1px solid #42b983; }
+
+.menu-title[data-v-1b2bbd44] {
+  padding: 10px;
+  display: flex;
+  align-items: center; }
+  .menu-title[data-v-1b2bbd44] > i[data-v-1b2bbd44] {
+    font-size: 20px;
+    padding: 0px 8px 0px 0px;
+    margin: 0px 8px 0px 0px;
+    position: relative; }
+    .menu-title[data-v-1b2bbd44] > i[data-v-1b2bbd44][data-v-1b2bbd44]::after {
+      content: " ";
+      width: 3px;
+      height: 100%;
+      background-color: #ff6a00;
+      position: absolute;
+      top: 0px;
+      right: 0px; }
+  .menu-title[data-v-1b2bbd44] > span[data-v-1b2bbd44] {
+    color: #333;
+    font-size: 16px; }

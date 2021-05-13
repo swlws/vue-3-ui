@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaseMenu Component</title>
+    <link rel="stylesheet" href="./../lib/element-plus.css" />
+    <link rel="stylesheet" href="./../../dist/vue-3-ui.umd.css" />
+    <style>
+      html,
+      body {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" style="height: 100%">
+      <ui-base-menu :data="data" :ids="ids" @route-change="routeChange" />
+    </div>
+
+    <script src="./../lib/vue@next.js"></script>
+    <script src="./../lib/element-plus.js"></script>
+    <script src="./../lib/element-plus.locale.zh-cn.js"></script>
+    <script src="./../lib/element-plus.dayjs.locale.zh-cn.js"></script>
+    <script src="./../lib/zh-cn.js"></script>
+    <script src="./../../dist/vue-3-ui.umd.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

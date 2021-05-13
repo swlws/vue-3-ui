@@ -1,7 +1,12 @@
 # vue-3-ui
 
 Personal UI Library
+vue3 环境下，基于 element-plus 的二次 UI 开发
 
-## 构建工具
+## 环境
 
-rollup
+- vue3
+- element-plus
+- rollup
+- scss
+- typescript

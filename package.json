@@ -15,7 +15,8 @@
     "clean": "rimraf ./dist",
     "cpdist": "node build/cp_dist",
     "up": "sh sftp_up.sh",
-    "down": "node sftp-down.js"
+    "down": "node sftp-down.js",
+    "doc": "docsify serve ./docs -o -p 8080"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
