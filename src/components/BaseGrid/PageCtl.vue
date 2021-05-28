@@ -27,9 +27,13 @@ export default defineComponent({
     const sizeChangeEvent = (pageSize: number) => {
       emit("update:page-size", pageSize);
       emit("update:page-num", 1);
+
+      emit("change", 1, pageSize);
     };
+
     const currentChangeEvent = (pageNum: number) => {
       emit("update:page-num", pageNum);
+      emit("change", pageNum, props.pageSize);
     };
 
     return {

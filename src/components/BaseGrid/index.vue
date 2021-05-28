@@ -19,6 +19,7 @@
         :total="total"
         v-model:pageNum="pageNum"
         v-model:pageSize="pageSize"
+        @change="reload"
       />
     </footer>
   </article>
@@ -46,9 +47,17 @@ export default defineComponent({
     },
   },
   setup(props, { emit }) {
-    const { total, pageNum, pageSize, data } = initGrid(
+    const { total, pageNum, pageSize, data, reload } = initGrid(
       props.loadData as TLoadData
     );
+
+    const updateRow = (index: number, row: PlainObject) => {
+      if (typeof index !== "number") {
+        throw new Error(`Param 'index' Must Be Number`);
+      }
+
+      data.value.splice(index, 1, row);
+    };
 
     return {
       emit,
@@ -56,6 +65,8 @@ export default defineComponent({
       pageNum,
       pageSize,
       data,
+      updateRow,
+      reload,
     };
   },
 });

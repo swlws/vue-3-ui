@@ -12,9 +12,10 @@
     "useDefineForClassFields": true,
     "sourceMap": false,
     "strictBindCallApply": false,
-    "noImplicitThis": false,   
+    "noImplicitThis": false,
     "baseUrl": ".",
     "paths": {
+      "tslib" : ["node_modules/tslib/tslib.d.ts"],
       "@/*": [
         "src/*"
       ],

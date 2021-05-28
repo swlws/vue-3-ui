@@ -22,7 +22,7 @@ export function initGrid(loadData?: TLoadData) {
   const pageNum = ref(1);
   const pageSize = ref(20);
 
-  const fn = (pageNum: number, pageSize: number) => {
+  const reload = (pageNum = 1, pageSize = 20) => {
     if (typeof loadData !== "function") return;
 
     const param = {
@@ -34,16 +34,13 @@ export function initGrid(loadData?: TLoadData) {
       data.value = res.list;
     });
   };
-
-  // TODO 默认会触发一次，待查资料理解原理
-  watchEffect(() => {
-    fn(pageNum.value, pageSize.value);
-  });
+  reload();
 
   return {
     total,
     pageNum,
     pageSize,
     data,
+    reload,
   };
 }

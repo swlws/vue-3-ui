@@ -13,9 +13,9 @@
     "build:esm": "rollup -c build/rollup.esm.config.js",
     "build:umd": "rollup -c build/rollup.umd.config.js",
     "clean": "rimraf ./dist",
-    "cpdist": "node build/cp_dist",
+    "cpdist": "npm run build && node build/cp_dist",
     "up": "sh sftp_up.sh",
-    "down": "node sftp-down.js",
+    "down": "node sftp_down.js",
     "doc": "docsify serve ./docs -o -p 8080"
   },
   "devDependencies": {
@@ -36,6 +36,7 @@
     "@vue/compiler-sfc": "^3.0.11",
     "element-plus": "^1.0.2-beta.44",
     "rollup-plugin-commonjs": "^10.1.0",
+    "tslib": "^2.2.0",
     "typescript": "~3.9.3",
     "vue": "^3.0.4"
   }

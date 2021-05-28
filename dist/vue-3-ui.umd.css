@@ -1,3 +1,10 @@
+.base-field-group[data-v-620c4089] {
+  display: flex;
+  flex-wrap: wrap; }
+  .base-field-group[data-v-620c4089] > section[data-v-620c4089] {
+    width: 200px;
+    margin: 0px 10px; }
+
 .base-grid[data-v-4e9900ac] {
   height: 100%;
   display: flex;

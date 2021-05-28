@@ -1,5 +1,42 @@
 import { PlainObject } from "@/typings/component";
 
+/**
+ * 函数节流，一个周期内仅执行一次
+ * @param fn
+ * @param wait
+ */
+export function throttle(fn: any, wait = 300, that?: any) {
+  let timer: any = null;
+
+  return function (...rest: any[]) {
+    if (typeof fn !== "function") return;
+    if (!timer) {
+      timer = setTimeout(() => {
+        timer = null;
+        fn.call(that, ...rest);
+      }, wait);
+    }
+  };
+}
+
+/**
+ * 函数防抖
+ * 连续触发N次，仅在最后一次执行
+ *
+ * @param fn
+ * @param wait
+ */
+export function debounce(fn: any, wait = 300, that?: any) {
+  let timer: any = null;
+
+  return function (...rest: any[]) {
+    if (typeof fn !== "function") return;
+
+    clearTimeout(timer);
+    timer = setTimeout(fn.bind(that, ...rest), wait);
+  };
+}
+
 export function makeTree(
   data: PlainObject[],
   config = { id: "id", pid: "pid" }

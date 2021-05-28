@@ -67,11 +67,14 @@ export function menu(data: TMenuItem[], ids = ["", "", ""], emit: TEmit) {
   watch(oneId, (v) => {
     const twoLevel = treeMenu.find((item) => item.id === v).child;
     if (!Array.isArray(twoLevel) || twoLevel.length === 0) return;
+    twoId.value = twoLevel[0].id;
 
     const threeLevel = twoLevel[0].child;
     if (Array.isArray(threeLevel) && threeLevel.length > 0) {
+      threeId.value = threeLevel[0].id;
       routeChange(threeLevel[0].path);
     } else {
+      threeId.value = "";
       routeChange(twoLevel[0].path);
     }
   });
